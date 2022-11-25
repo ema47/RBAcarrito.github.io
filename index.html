@@ -35,6 +35,10 @@
 					  <input type="text" class="form-control" value="4KP375hzfEYrH2mGWEjGQ4LP4ez4mAVC" id="key">
 				</div>
 				<div class="form-group">
+					<label for="sel1">BIN:</label>
+					<input type="text" class="form-control" value="212327" id="BINtrx">
+				  </div>
+				<div class="form-group">
 				  <label for="sel1">Codigo de Comercio :</label>
 				  <input type="text" class="form-control" value="597026007992" id="accMerchantId">
 				</div>
@@ -388,7 +392,7 @@
             pgcqData["threeDSRequestorAuthenticationInd"] = "01";
 			pgcqData["threeDSRequestorChallengeInd"] = $("#threeDSRequestorChallengeInd").val();// "04";
 			
-            pgcqData["acquirerBIN"] = "212327";
+            pgcqData["acquirerBIN"] = $('#BINtrx').val();
             pgcqData["acquirerMerchantID"] = $('#accMerchantId').val(); //"597026007992";
             pgcqData["cardholderName"] = "Challenge One";
 			pgcqData["purchaseNumber"] = "100010";
